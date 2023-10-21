@@ -23,7 +23,7 @@ header {
 }
 
 middle {
-    background-image: url('images/team.jpg');
+    background-image: url('images/team1.png');
     background-size: cover; /* Adjust to 'contain' or '100% 100%' as needed */
     background-repeat: no-repeat;
     background-position: center;
