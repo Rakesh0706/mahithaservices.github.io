@@ -1,0 +1,228 @@
+﻿/* Reset some default browser styles */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    background-size: cover; /* Adjust to 'contain' or '100% 100%' as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: ;
+    padding: 10px 0;
+    text-align: end;
+}
+
+middle {
+    background-image: url('images/team.jpg');
+    background-size: cover; /* Adjust to 'contain' or '100% 100%' as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align:center;
+}
+
+
+
+kav {
+    display: flex;
+    justify-content:left;
+    align-items:self-start;
+    margin-bottom: 6rem;
+    position:absolute;
+    top: 30%;
+    width: 100%;
+    padding: 20px -40%;
+}
+
+kav img {
+    width: 300px; /* Adjust the width as needed */
+    top :0;
+    height:20;
+    width: 500px;
+
+}
+    nav ul {
+        list-style: none;
+        color: goldenrod;
+    }
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+    color: goldenrod;
+    justify-content: right;
+    align-items: end;
+}
+
+nav a {
+    
+    top: 0;
+    text-decoration: none;
+    color: gold;
+    font-weight: bolder;
+}
+
+section {
+    padding: 40px;
+}
+
+hero {
+   bottom:auto;
+    text-align: center end;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:lightgoldenrodyellow;
+   # text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold; /* Add text shadow for the shining effect */
+}
+#hero h2 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold; /* Add text shadow for the shining effect */
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+    .cta-button:hover {
+        background-color: #007BFF;
+        color: #fff;
+    }
+
+#about, #features, #contact {
+    background-color:goldenrod;
+    margin-top: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+    #about h2, #features h2, #contact h2 {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+
+.feature {
+    margin: 20px 0;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label, input, textarea, button {
+    display: block;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Add more specific styles for form elements if needed */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the form submit button */
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    form button:hover {
+        background-color: #0056b3;
+    }
+
+/* Responsive design - adjust styles for smaller screens */
+@media (max-width: 768px) {
+    header nav {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        header nav li {
+            display: block;
+            margin: 10px 0;
+        }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #about, #features, #contact {
+        margin: 10px;
+    }
+
+    form label, form input, form textarea {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Adjust other styles as needed for responsiveness */
+
+/* Footer styles */
+footer p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Additional styling can be added for specific elements as required */
