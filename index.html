@@ -1,137 +1,73 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Mahitha Services</title>
-    <!-- Add your CSS links and other meta tags here -->
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Shared Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            background-image: url('images/team1.png'); /* Add your background image URL here */
-            background-size: cover;
-            background-position: center;
-        }
-
-        section {
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
-            margin: 10px;
-            border-radius: 5px;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-            header h2 {
-                font-size: 2.0em;
-                margin-bottom: 20px;
-                text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold; /* Add text shadow for the shining effect */
-            }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-            nav ul li {
-                display: inline;
-                margin-right: 20px;
-                font-size: 20px; /* Increase font size */
-                font-weight: bold; /* Make the font bold */
-            }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        /* Logo Styles */
-        #logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-            background-color: black;
-        }
-
-        /* Home Section Styles */
-        #home {
-            text-align: center;
-        }
-
-        /* About Section Styles */
-        #about ol {
-            padding-left: 20px;
-        }
-
-        /* Services Section Styles */
-        #services ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-
-        /* Testimonials Section Styles */
-        #testimonials {
-            /* Add your testimonial styles here */
-        }
-
-        /* Contact Section Styles */
-        #contact ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        /* Follow Us Section Styles */
-        #follow-us ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        /* Footer Styles */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-        }
-        .image-gallery {
-            white-space: nowrap;
-            overflow-x: auto;
-        }
-        .testimonial-image {
-            display: inline-block;
-            max-width: 100%;
-            height: auto;
-            margin-right: 10px; /* Add some spacing between images */
-        }
-        /* Media Queries for Responsive Design */
         @media screen and (max-width: 768px) {
             section {
                 margin: 5px;
                 padding: 10px;
             }
+
+            header {
+                background-color: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                padding: 5px 0;
+            }
+
             .testimonial-image,
             .testimonial-video {
                 max-width: 100%;
                 height: auto;
             }
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-                font-size: 16px; /* Increase font size */
-                font-weight: bold; /* Make the font bold */
+
+            #logo-container {
+                display: flex;
+                justify-content: center;
+                background-color: black;
+                height: 200px;
             }
+
+
+            nav {
+                flex-direction: column;
+            }
+
+                nav li {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+
+                nav ul ul {
+                    top: auto;
+                    left: auto;
+                    width: 100%;
+                    box-shadow: none;
+                }
+
+                nav ul li:hover > ul {
+                    display: flow;
+                    width: 100%;
+                    background-color: black;
+                }
+
+                nav ul ul li {
+                    width: 100%;
+                    display: block;
+                }
+
+            #home h1 {
+                font-size: 2.0em;
+                text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
+            }
+
+            #home p {
+            font-size: 1.0em; color: #fff; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
             .gallery-items {
                 flex: 0 0 100%; /* Adjust the percentage based on your preference */
                 margin-bottom: 5px;
@@ -145,30 +81,37 @@
                 object-fit: cover; /* Maintain aspect ratio and cover the frame */
                 border-radius: 5px;
             }
-            
         }
     </style>
 </head>
 <body>
     <header>
+        <div id="logo-container">
+            <img src="images/mahitha logo.png" alt="Mahitha Services Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#testimonials">Success stories</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                    <ul>
+                        <li><a href="#gallery">Birthday Shoot</a></li>
+                        <li><a href="#gallery">Wedding Anniversary</a></li>
+                        <li><a href="#gallery">Outdoor Shoot</a></li>
+                        <li><a href="#gallery">Pre Wedding Shoot</a></li>
+                        <!-- Add more categories as needed -->
+                    </ul>
+                </li>
             </ul>
-            <img id="logo" src="images/mahitha logo.png" alt="Mahitha Services Logo"> <!-- Add your logo image URL here -->
         </nav>
-        <h2>
-            <span class="glow">Innovate</span><br /><br />
-            <span class="glow">Celebrate</span><br /><br />
-            <span class="glow">Elevate</span><br /><br />
-        </h2>
     </header>
-    <section id="home" style="text-align: center; background: url('your-background-image.jpg') no-repeat center center fixed; background-size: cover;">
-        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
-            <h1 style="font-size: 2.5em; text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;">Welcome to Mahitha Services</h1>
-            <p style="font-size: 1.2em; color: #fff; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">We empower businesses with cutting-edge software solutions to drive innovation, productivity, and growth. Our passion for technology and unwavering commitment to our clients set us apart as a trusted partner in your journey to success.</p>
+
+    <section id="home">
+        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 30px; background-image:url('images/welcome.png')">
+            <h1>Welcome to Mahitha Services</h1>
+            <p>We empower businesses with cutting-edge software solutions to drive innovation, productivity, and growth. Our passion for technology and unwavering commitment to our clients set us apart as a trusted partner in your journey to success.</p>
         </div>
         <!-- Add your logo image here -->
     </section>
@@ -185,12 +128,9 @@
             <div class="gallery-item">
                 <img src="images/im3.png" alt="Gallery Image 1" class="gallery-media">
             </div>
-            <div class="gallery-item">
-                <img src="images/im4.png" alt="Gallery Image 2" class="gallery-media">
-            </div>
-            <div class="gallery-item">
-                <img src="images/im5.png" alt="Gallery Image 4" class="gallery-media">
-            </div>
+          
+
+          
             <!-- Add more images as needed -->
         </div>
         <div class="gallery-container">
@@ -199,33 +139,36 @@
             </div>
             <!-- Add more videos as needed -->
         </div>
+        <a href="gallery.html" class="button">Explore our gallery</a>
     </section>
 
-    <section id="about" style="background-color: #f9f9f9; padding: 20px;">
-        <h2 style="font-size: 2em; color: #333; ">Why Choose Mahitha Services:</h2>
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-            <div style="flex: 1; padding: 5px; text-align: center;">
-                <img src="images/team1.png" alt="Expertise Icon" style="max-width: 100px; height: 100px;">
-                <h3 style="font-size: 1.5em; color: #333;">Expertise</h3>
-                <p style="color: #666;">Our team of experienced photographers captures every moment with precision and creativity.</p>
+    <section id="about" class="why-choose-section">
+        <h2>Why Choose Mahitha Services</h2>
+        <div class="feature-container">
+            <div class="feature">
+               
+                <h3>Expertise</h3>
+                <p>Our experienced photographers capture every moment with precision and creativity.</p>
             </div>
-            <div style="flex: 1; padding: 5px; text-align: center;">
-                <img src="images/innovate.jpg" alt="Innovation Icon" style="max-width: 100px; height: 100px;">
-                <h3 style="font-size: 1.5em; color: #333;">Innovation</h3>
-                <p style="color: #666;">We embrace the latest photographic technologies and trends to deliver exceptional results.</p>
+            <div class="feature">
+               
+                <h3>Innovation</h3>
+                <p>We embrace the latest photographic technologies and trends to deliver exceptional results.</p>
             </div>
-            <div style="flex: 1; padding: 5px; text-align: center;">
-                <img src="images/custom.png" alt="Customization Icon" style="max-width: 100px; height: 100px;">
-                <h3 style="font-size: 1.5em; color: #333;">Customization</h3>
-                <p style="color: #666;">We tailor our services to suit your unique needs because no two moments are alike.</p>
+            <div class="feature">
+              
+                <h3>Customization</h3>
+                <p>We tailor our services to suit your unique needs because no two moments are alike.</p>
             </div>
-            <div style="flex: 1; padding: 5px; text-align: center;">
-                <img src="images/customer.jpeg" alt="Customer-Centric Icon" style="max-width: 100px; height: 100px;">
-                <h3 style="font-size: 1.5em; color: #333;">Customer-Centric</h3>
-                <p style="color: #666;">Your satisfaction is our priority, and your moments are our focus.</p>
+            <div class="feature">
+                
+                <h3>Customer-Centric</h3>
+                <p>Your satisfaction is our priority, and your moments are our focus.</p>
             </div>
         </div>
     </section>
+
+
 
     <section id="services">
         <h2>Our Services:</h2>

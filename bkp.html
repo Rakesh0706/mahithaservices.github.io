@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mahitha Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media screen and (max-width: 768px) {
+            section {
+                margin: 5px;
+                padding: 10px;
+            }
+
+            header {
+                background-color: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                padding: 5px 0;
+            }
+
+            .testimonial-image,
+            .testimonial-video {
+                max-width: 100%;
+                height: auto;
+            }
+
+            #logo-container {
+                display: flex;
+                justify-content: center;
+                background-color: black;
+                height: 200px;
+            }
+
+
+
+            nav {
+                flex-direction: column;
+            }
+
+                nav li {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+
+                nav ul ul {
+                    top: auto;
+                    left: auto;
+                    width: 100%;
+                    box-shadow: none;
+                }
+
+                nav ul li:hover > ul {
+                    display: flow;
+                    width: 100%;
+                    background-color: black;
+                }
+
+                nav ul ul li {
+                    width: 100%;
+                    display: block;
+                }
+
+
+            .gallery-items {
+                flex: 0 0 100%; /* Adjust the percentage based on your preference */
+                margin-bottom: 5px;
+                height: 300px; /* Set a fixed height for uniformity */
+                overflow: hidden; /* Ensure consistent frame size */
+            }
+
+            .gallery-media {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Maintain aspect ratio and cover the frame */
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="images/mahitha logo.png" alt="Mahitha Services Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Success stories</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                    <ul>
+                        <li><a href="#gallery">Birthday Shoot</a></li>
+                        <li><a href="#gallery">Wedding Anniversary</a></li>
+                        <li><a href="#gallery">Outdoor Shoot</a></li>
+                        <li><a href="#gallery">Pre Wedding Shoot</a></li>
+                        <!-- Add more categories as needed -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" style="text-align: center; background: url('your-background-image.jpg') no-repeat center center fixed; background-size: cover;">
+        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+            <h1 style="font-size: 2.5em; text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;">Welcome to Mahitha Services</h1>
+            <p style="font-size: 1.2em; color: #fff; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">We empower businesses with cutting-edge software solutions to drive innovation, productivity, and growth. Our passion for technology and unwavering commitment to our clients set us apart as a trusted partner in your journey to success.</p>
+        </div>
+        <!-- Add your logo image here -->
+    </section>
+
+    <section id="gallery" style="background-color: #f9f9f9; padding: 20px;">
+        <h2 style="font-size: 2em; color: #333;">Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-items">
+                <img src="images/im1.png" alt="Gallery Image 5" class="gallery-media">
+            </div>
+            <div class="gallery-item">
+                <img src="images/im2.png" alt="Gallery Image 3" class="gallery-media">
+            </div>
+            <div class="gallery-item">
+                <img src="images/im3.png" alt="Gallery Image 1" class="gallery-media">
+            </div>
+            <div class="gallery-item">
+                <img src="images/im4.png" alt="Gallery Image 2" class="gallery-media">
+            </div>
+            <div class="gallery-item">
+                <img src="images/im5.png" alt="Gallery Image 4" class="gallery-media">
+            </div>
+
+
+            <!-- Add more images as needed -->
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZpVR4ZTH15g" frameborder="0" allowfullscreen class="gallery-media"></iframe>
+            </div>
+            <!-- Add more videos as needed -->
+        </div>
+        <a href="gallery.html" class="button">Explore our gallery</a>
+    </section>
+
+    <section id="about" class="why-choose-section">
+        <h2>Why Choose Mahitha Services</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <img src="images/team1.png" alt="Expertise Icon">
+                <h3>Expertise</h3>
+                <p>Our experienced photographers capture every moment with precision and creativity.</p>
+            </div>
+            <div class="feature">
+                <img src="images/innovate.jpg" alt="Innovation Icon">
+                <h3>Innovation</h3>
+                <p>We embrace the latest photographic technologies and trends to deliver exceptional results.</p>
+            </div>
+            <div class="feature">
+                <img src="images/custom.png" alt="Customization Icon">
+                <h3>Customization</h3>
+                <p>We tailor our services to suit your unique needs because no two moments are alike.</p>
+            </div>
+            <div class="feature">
+                <img src="images/customer.jpeg" alt="Customer-Centric Icon">
+                <h3>Customer-Centric</h3>
+                <p>Your satisfaction is our priority, and your moments are our focus.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="services">
+        <h2>Our Services:</h2>
+        <ul>
+            <br />
+            <br />
+            <li>Photo/Video Shoots: Any event shoots indoor/outdoor we promise to deliver better than expectations</li>
+            <li>Customized Decorations: You imagine we deliver</li>
+            <li>Custom Software Development: From web applications to mobile apps</li>
+            <li>Cloud Solutions: Harness the power of the cloud to boost efficiency</li>
+            <li>E-commerce Development: Create a seamless online shopping experience</li>
+            <li>Business Process Automation: Streamline your operations</li>
+            <li>Data Analytics: Unlock valuable insights from your data</li>
+            <li>Maintenance and Support: We're here to ensure your software remains</li>
+        </ul>
+    </section>
+    <section id="testimonials">
+        <h2>Client Success Stories:</h2>
+        <!-- Add client testimonials or case studies here -->
+        <div class="image-gallery">
+            <img src="images/gemini.jpg" alt="Client Testimonial 1" class="testimonial-image">
+            <li>Gemini FX: Truly inspirational team. Made our works easy with there trending technologies</li>
+            <br /><br />
+            <img src="images/Arts.webp" alt="Client Testimonial 2" class="testimonial-image">
+            <li>Artsway: Combination of our works are tremendous. Support from mahitha services are Unforgettable</li>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us:</h2>
+        <p>Ready to take your business to the next level with our services? Contact us today for a free consultation.</p>
+        <ul>
+            <li>Phone: +91 9963384184</li>
+            <li>Email: <a href="mailto:">anudeepphoto123@gmail.com</a></li>
+            <li>Address: 16-8-275, abbanikunta, labour colony, warangal, pincode :506013</li>
+        </ul>
+    </section>
+    <section id="follow-us">
+        <h2>Follow Us:</h2>
+        <p>Stay updated with the latest news, trends, and success stories. Connect with us on social media:</p>
+        <ul>
+            <li><a href="[Facebook link]">Facebook</a></li>
+            <li><a href="[Twitter link]">Twitter</a></li>
+            <li><a href="[LinkedIn link]">LinkedIn</a></li>
+            <li><a href="[Instagram link]">Instagram</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2023 Mahitha Services. All rights reserved.</p>
+        <!-- Add links to Privacy Policy and Terms of Service here -->
+    </footer>
+    <!-- Add your JavaScript links and scripts here if needed -->
+</body>
+</html>
